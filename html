@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        text-align: center;
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+        font-size: 36px;
+        color: #ff0000;
+        margin-top: 50px;
+    }
+    
+    p {
+        font-size: 24px;
+        color: #333333;
+        margin-top: 20px;
+    }
+    
+    #roastBtn {
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: #ffffff;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    #roastBtn:hover {
+        background-color: #990000;
+    }
+    
+    #uselessDiv {
+        margin-top: 50px;
+    }
+    
+    #uselessText {
+        font-size: 18px;
+        color: #333333;
+    }
+    
+    .uselessButton {
+        padding: 5px 10px;
+        background-color: #cccccc;
+        color: #333333;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    .uselessButton:hover {
+        background-color: #999999;
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome to the Useless Site 2.0!</h1>
+    <p>Click the buttons below to experience the ultimate uselessness.</p>
+    
+    <button id="roastBtn" onclick="roastUser()">Roast Me!</button>
+    
+    <div id="uselessDiv">
+        <p id="uselessText">This is a useless text. Click the buttons below to achieve absolutely nothing:</p>
+        <button class="uselessButton" onclick="doNothing()">Do Nothing</button>
+        <button class="uselessButton" onclick="doNothing()">Achieve Nothing</button>
+        <button class="uselessButton" onclick="doNothing()">Waste Time</button>
+    </div>
+    
+    <script>
+        function roastUser() {
+            const roasts = [
+                "Your fashion sense is as questionable as Internet Explorer.",
+                "I'm sorry, but you've failed the Turing test.",
+                "Your coding skills are so outdated, they belong in the '90s.",
+                "If stupidity was an art, you'd be Picasso.",
+                "You have the charisma of a damp sock.",
+                "Your sense of humor is as dry as a desert.",
+                "Your password must be 'password123', because your security is non-existent."
+            ];
+            
+            const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
+            alert(randomRoast);
+        }
+        
+        function doNothing() {
+            // Do nothing (literally!)
+        }
+    </script>
+</body>
+</html>
